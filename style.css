@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+  color: #1d2c43;
+}
+
+body {
+  max-width: 100vw;
+  min-height: 100vh;
+  background-color: #d4e1ef;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  background-color: #fff;
+  width: 300px;
+  height: 450px;
+  border-radius: 12px;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 63% 37%;
+  gap: 20px;
+}
+
+.qrcode-wrapper {
+  width: 97%;
+  background-color: #3685fe;
+  margin: 0px auto;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+}
+
+#qrcode {
+  width: 155px;
+  height: 155px;
+  display: grid;
+  place-items: center;
+}
+
+#qrcode canvas,
+#qrcode img {
+  width: 100%;
+  height: 100%;
+  filter: invert(100%);
+}
+
+.qrcode-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  gap: 10px;
+  margin: 0px auto;
+}
+
+.qrcode-details h2 {
+  font-size: 2rem;
+}
+
+.qrcode-details p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
